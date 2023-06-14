@@ -1,4 +1,9 @@
-public static int majorityElement(int[] arr) {
+import java.util.*;
+class Assignment1 {
+    public static void main(String[] args) {
+        System.out.println(majorityElement(new int[] {2, 4, 5, 5, 5, 5, 5}));    //input & output
+    }
+    public static int majorityElement(int[] arr) {
         int n = 0;                               //counter initialised
         Arrays.sort(arr);                        //array is first sorted
         for(int i=0; i<arr.length; i++) {        //to hover on all the elements of array
@@ -14,3 +19,4 @@ public static int majorityElement(int[] arr) {
         }
         return -1;                                //if no value is repeated n/2 times then return -1
     }
+}
